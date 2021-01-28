@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Kudapan Jadul Indonesia</string>
+    <string name="detail">Detail</string>
+    <string name="empty">-</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="instagram">Instagram</string>
+    <string name="facebook">Facebook</string>
+    <string name="gmail">Gmail</string>
+    <string name="snack_name">Nama Kudapan</string>
+    <string name="distribution_area">Daerah Persebaran</string>
+    <string name="share_to">Bagikan ke</string>
+    <string name="resource">Sumber Informasi</string>
+    <string name="aboutme">Irkham Nazmi Novian</string>
+    <string name="email">irkham.nazmi@gmail.com</string>
+</resources>

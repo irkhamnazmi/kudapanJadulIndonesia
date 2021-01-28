@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".DetailSnackActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/img_item_photo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/nasijagung"/>
+
+            <LinearLayout
+                android:id="@+id/ll_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/img_item_photo"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/textTitle"
+                    android:text="@string/snack_name"/>
+
+                <TextView
+                    android:id="@+id/tv_item_name"
+                    style="@style/textContent"
+                    android:justificationMode="inter_word"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"
+                    android:text="@string/empty"/>
+
+                <TextView
+                    style="@style/textTitle"
+                    android:text="@string/distribution_area"/>
+
+                <TextView
+                    android:id="@+id/tv_item_dist_area"
+                    style="@style/textContent"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingMultiplier="1"
+                    android:textStyle="bold"
+                    android:text="@string/empty"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+       <TextView
+           style="@style/textTitle"
+           android:text="@string/share_to"
+           android:layout_gravity="center"
+           android:textAlignment="center"
+          />
+
+       <HorizontalScrollView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:fillViewport="true"
+           >
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="16dp"
+               android:layout_marginBottom="10dp"
+               android:gravity="center">
+
+               <LinearLayout
+                   android:id="@+id/ll_whatsapp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:gravity="center">
+
+                   <ImageView
+                       android:id="@+id/img_whatsapp"
+                       android:layout_width="24dp"
+                       android:layout_height="24dp"
+                       tools:src="@drawable/ic_whatsapp"
+                       android:background="@color/white"
+                       android:scaleType="centerCrop"
+                       />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/whatsapp"
+                       android:textColor="@color/brown_light"
+                       android:textStyle="bold"
+                       android:textSize="16sp"
+                       android:layout_gravity="center"/>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/ll_instagram"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:layout_marginLeft="30dp"
+                   android:layout_toRightOf="@id/ll_whatsapp"
+                   android:gravity="center">
+
+                   <ImageView
+                       android:id="@+id/img_instagram"
+                       android:layout_width="24dp"
+                       android:layout_height="24dp"
+                       tools:src="@drawable/ic_instagram"
+                       android:background="@color/white"
+                       android:scaleType="centerCrop"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/instagram"
+                       android:textColor="@color/brown_light"
+                       android:textStyle="bold"
+                       android:textSize="16sp"
+                       android:layout_gravity="center"/>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/ll_facebook"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:layout_marginLeft="30dp"
+                   android:layout_toRightOf="@id/ll_instagram"
+                   android:gravity="center">
+
+                   <ImageView
+                       android:id="@+id/img_facebook"
+                       android:layout_width="24dp"
+                       android:layout_height="24dp"
+                       tools:src="@drawable/ic_facebook"
+                       android:background="@color/white"
+                       android:scaleType="centerCrop"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/facebook"
+                       android:textStyle="bold"
+                       android:textSize="16sp"
+                       android:textColor="@color/brown_light"
+                       android:layout_gravity="center"/>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:layout_marginLeft="30dp"
+                   android:layout_toEndOf="@id/ll_facebook"
+                   android:gravity="center">
+
+                   <ImageView
+                       android:id="@+id/img_gmail"
+                       android:layout_width="24dp"
+                       android:layout_height="24dp"
+                       tools:src="@drawable/ic_gmail"
+                       android:background="@color/white"
+                       android:scaleType="centerCrop"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/gmail"
+                       android:textColor="@color/brown_light"
+                       android:textStyle="bold"
+                       android:textSize="16sp"
+                       android:layout_gravity="center"/>
+
+               </LinearLayout>
+
+           </RelativeLayout>
+
+       </HorizontalScrollView>
+
+
+   <TextView
+       style="@style/textTitle"
+       android:text="@string/resource"
+       android:layout_marginBottom="10dp"
+       />
+
+   <TextView
+       android:id="@+id/tv_item_link"
+       style="@style/textContent"
+       android:layout_marginBottom="20dp"
+       android:text="@string/empty"/>
+
+   <TextView
+       android:id="@+id/tv_item_subtitle"
+       style="@style/textTitle"
+       tools:text="Tentang Kudapan Jadul"
+       android:layout_marginBottom="10dp"
+       />
+
+    <TextView
+        android:id="@+id/tv_item_detail"
+        style="@style/textContent"
+        android:layout_marginBottom="10dp"
+        android:text="@string/empty"
+        android:justificationMode="inter_word"/>
+
+    </LinearLayout>
+
+</ScrollView>
